@@ -43,9 +43,10 @@
             // 
             this.ContenedorMenuAvion.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ContenedorMenuAvion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContenedorMenuAvion.Location = new System.Drawing.Point(286, 0);
+            this.ContenedorMenuAvion.Location = new System.Drawing.Point(763, 0);
+            this.ContenedorMenuAvion.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.ContenedorMenuAvion.Name = "ContenedorMenuAvion";
-            this.ContenedorMenuAvion.Size = new System.Drawing.Size(600, 389);
+            this.ContenedorMenuAvion.Size = new System.Drawing.Size(1600, 928);
             this.ContenedorMenuAvion.TabIndex = 10;
             // 
             // MenuVertical
@@ -57,8 +58,9 @@
             this.MenuVertical.Controls.Add(this.btnlogoInicio);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 0);
+            this.MenuVertical.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(286, 389);
+            this.MenuVertical.Size = new System.Drawing.Size(763, 928);
             this.MenuVertical.TabIndex = 9;
             // 
             // button3
@@ -71,12 +73,14 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 206);
+            this.button3.Location = new System.Drawing.Point(0, 491);
+            this.button3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(286, 40);
+            this.button3.Size = new System.Drawing.Size(763, 95);
             this.button3.TabIndex = 3;
             this.button3.Text = "BUSCAR CONTROLADOR AEREO";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -88,12 +92,14 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 166);
+            this.button2.Location = new System.Drawing.Point(0, 396);
+            this.button2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(286, 40);
+            this.button2.Size = new System.Drawing.Size(763, 95);
             this.button2.TabIndex = 2;
             this.button2.Text = "ELIMINAR CONTROLADOR AEREO";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnprod
             // 
@@ -105,9 +111,10 @@
             this.btnprod.ForeColor = System.Drawing.Color.White;
             this.btnprod.Image = ((System.Drawing.Image)(resources.GetObject("btnprod.Image")));
             this.btnprod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnprod.Location = new System.Drawing.Point(0, 126);
+            this.btnprod.Location = new System.Drawing.Point(0, 300);
+            this.btnprod.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnprod.Name = "btnprod";
-            this.btnprod.Size = new System.Drawing.Size(286, 40);
+            this.btnprod.Size = new System.Drawing.Size(763, 95);
             this.btnprod.TabIndex = 1;
             this.btnprod.Text = "AGREGAR CONTROLADOR AEREO";
             this.btnprod.UseVisualStyleBackColor = false;
@@ -117,22 +124,23 @@
             // 
             this.btnlogoInicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnlogoInicio.Image = ((System.Drawing.Image)(resources.GetObject("btnlogoInicio.Image")));
-            this.btnlogoInicio.Location = new System.Drawing.Point(3, 6);
+            this.btnlogoInicio.Location = new System.Drawing.Point(8, 14);
+            this.btnlogoInicio.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnlogoInicio.Name = "btnlogoInicio";
-            this.btnlogoInicio.Size = new System.Drawing.Size(283, 76);
+            this.btnlogoInicio.Size = new System.Drawing.Size(755, 181);
             this.btnlogoInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnlogoInicio.TabIndex = 0;
             this.btnlogoInicio.TabStop = false;
             // 
             // MenuControladorAereo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 389);
+            this.ClientSize = new System.Drawing.Size(2363, 928);
             this.Controls.Add(this.ContenedorMenuAvion);
             this.Controls.Add(this.MenuVertical);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MenuControladorAereo";
             this.Text = "MenuControladorAereo";
             this.MenuVertical.ResumeLayout(false);
