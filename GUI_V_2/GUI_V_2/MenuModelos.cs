@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI_V_2
 {
-    public partial class MenuAvion : Form
+    public partial class MenuModelos : Form
     {
-        public MenuAvion()
+        public MenuModelos()
         {
             InitializeComponent();
         }
@@ -31,17 +31,17 @@ namespace GUI_V_2
 
         private void btnprod_Click(object sender, EventArgs e)
         {
-            AbrirFormMenu2(new AvionAdd());
+            AbrirFormMenu2(new ModeloAdd());
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AbrirFormMenu2(new AvionDelete());
+            AbrirFormMenu2(new ModeloDelete());
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            AbrirFormMenu2(new AvionFind());
+            AbrirFormMenu2(new ModeloFind());
         }
     }
 }

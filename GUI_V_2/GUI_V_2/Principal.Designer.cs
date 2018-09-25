@@ -30,6 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.BtnDesconectar = new System.Windows.Forms.Button();
+            this.BtnConectar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SubMenu = new System.Windows.Forms.Panel();
             this.btnControladorAereo = new System.Windows.Forms.Button();
             this.btnTecnicos = new System.Windows.Forms.Button();
@@ -49,17 +60,6 @@
             this.iconcerrar = new System.Windows.Forms.PictureBox();
             this.btnslide = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.BtnConectar = new System.Windows.Forms.Button();
-            this.BtnDesconectar = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
             this.SubMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -102,6 +102,136 @@
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(667, 1550);
             this.MenuVertical.TabIndex = 0;
+            // 
+            // BtnDesconectar
+            // 
+            this.BtnDesconectar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(135)))), ((int)(((byte)(204)))));
+            this.BtnDesconectar.FlatAppearance.BorderSize = 0;
+            this.BtnDesconectar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.BtnDesconectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDesconectar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDesconectar.ForeColor = System.Drawing.Color.White;
+            this.BtnDesconectar.Image = ((System.Drawing.Image)(resources.GetObject("BtnDesconectar.Image")));
+            this.BtnDesconectar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnDesconectar.Location = new System.Drawing.Point(100, 1264);
+            this.BtnDesconectar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.BtnDesconectar.Name = "BtnDesconectar";
+            this.BtnDesconectar.Size = new System.Drawing.Size(475, 95);
+            this.BtnDesconectar.TabIndex = 28;
+            this.BtnDesconectar.Text = "DESCONECTARSE";
+            this.BtnDesconectar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnDesconectar.UseVisualStyleBackColor = false;
+            this.BtnDesconectar.Visible = false;
+            this.BtnDesconectar.Click += new System.EventHandler(this.BtnDesconectar_Click);
+            // 
+            // BtnConectar
+            // 
+            this.BtnConectar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(135)))), ((int)(((byte)(204)))));
+            this.BtnConectar.FlatAppearance.BorderSize = 0;
+            this.BtnConectar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.BtnConectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnConectar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnConectar.ForeColor = System.Drawing.Color.White;
+            this.BtnConectar.Image = ((System.Drawing.Image)(resources.GetObject("BtnConectar.Image")));
+            this.BtnConectar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnConectar.Location = new System.Drawing.Point(100, 1264);
+            this.BtnConectar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.BtnConectar.Name = "BtnConectar";
+            this.BtnConectar.Size = new System.Drawing.Size(475, 95);
+            this.BtnConectar.TabIndex = 20;
+            this.BtnConectar.Text = "INGRESAR";
+            this.BtnConectar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnConectar.UseVisualStyleBackColor = false;
+            this.BtnConectar.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 209);
+            this.button1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(667, 95);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "MASTER";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(209, 1170);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '?';
+            this.textBox2.Size = new System.Drawing.Size(347, 38);
+            this.textBox2.TabIndex = 26;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(209, 1061);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(347, 38);
+            this.textBox1.TabIndex = 25;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(12, 1067);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(174, 32);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "USERNAME";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 1170);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(179, 32);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "PASSWORD";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(266, 993);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(102, 32);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "LOGIN";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(315, 1465);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(190, 32);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Sin autenticar";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(304, 1508);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(190, 32);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Sin autenticar";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(309, 1421);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(190, 32);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Sin autenticar";
             // 
             // SubMenu
             // 
@@ -384,136 +514,6 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(2800, 1443);
             this.panelContenedor.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(309, 1421);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 32);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Sin autenticar";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(304, 1508);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(190, 32);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Sin autenticar";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(315, 1465);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(190, 32);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Sin autenticar";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(266, 993);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 32);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "LOGIN";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 1170);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(179, 32);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "PASSWORD";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 1067);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(174, 32);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "USERNAME";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(209, 1061);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(347, 38);
-            this.textBox1.TabIndex = 25;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(209, 1170);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '?';
-            this.textBox2.Size = new System.Drawing.Size(347, 38);
-            this.textBox2.TabIndex = 26;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 209);
-            this.button1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(667, 95);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "MASTER";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // BtnConectar
-            // 
-            this.BtnConectar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(135)))), ((int)(((byte)(204)))));
-            this.BtnConectar.FlatAppearance.BorderSize = 0;
-            this.BtnConectar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.BtnConectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnConectar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnConectar.ForeColor = System.Drawing.Color.White;
-            this.BtnConectar.Image = ((System.Drawing.Image)(resources.GetObject("BtnConectar.Image")));
-            this.BtnConectar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnConectar.Location = new System.Drawing.Point(100, 1264);
-            this.BtnConectar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.BtnConectar.Name = "BtnConectar";
-            this.BtnConectar.Size = new System.Drawing.Size(475, 95);
-            this.BtnConectar.TabIndex = 20;
-            this.BtnConectar.Text = "INGRESAR";
-            this.BtnConectar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnConectar.UseVisualStyleBackColor = false;
-            this.BtnConectar.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // BtnDesconectar
-            // 
-            this.BtnDesconectar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(135)))), ((int)(((byte)(204)))));
-            this.BtnDesconectar.FlatAppearance.BorderSize = 0;
-            this.BtnDesconectar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.BtnDesconectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDesconectar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDesconectar.ForeColor = System.Drawing.Color.White;
-            this.BtnDesconectar.Image = ((System.Drawing.Image)(resources.GetObject("BtnDesconectar.Image")));
-            this.BtnDesconectar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDesconectar.Location = new System.Drawing.Point(100, 1264);
-            this.BtnDesconectar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.BtnDesconectar.Name = "BtnDesconectar";
-            this.BtnDesconectar.Size = new System.Drawing.Size(475, 95);
-            this.BtnDesconectar.TabIndex = 28;
-            this.BtnDesconectar.Text = "DESCONECTARSE";
-            this.BtnDesconectar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnDesconectar.UseVisualStyleBackColor = false;
-            this.BtnDesconectar.Visible = false;
-            this.BtnDesconectar.Click += new System.EventHandler(this.BtnDesconectar_Click);
             // 
             // Principal
             // 

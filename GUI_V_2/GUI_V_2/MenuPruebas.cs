@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI_V_2
 {
-    public partial class MenuAvion : Form
+    public partial class MenuPruebas : Form
     {
-        public MenuAvion()
+        public MenuPruebas()
         {
             InitializeComponent();
         }
@@ -29,19 +29,20 @@ namespace GUI_V_2
             Console.WriteLine("Finalizo Abrir Form");
         }
 
+
         private void btnprod_Click(object sender, EventArgs e)
         {
-            AbrirFormMenu2(new AvionAdd());
+            AbrirFormMenu2(new PruebasAdd());
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AbrirFormMenu2(new AvionDelete());
+            AbrirFormMenu2(new PruebaDelete());
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            AbrirFormMenu2(new AvionFind());
+            AbrirFormMenu2(new PruebasFind());
         }
     }
 }

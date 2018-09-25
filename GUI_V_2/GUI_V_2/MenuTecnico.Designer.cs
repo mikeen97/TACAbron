@@ -1,6 +1,6 @@
 ﻿namespace GUI_V_2
 {
-    partial class MenuAvion
+    partial class MenuTecnico
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuAvion));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuTecnico));
             this.ContenedorMenuAvion = new System.Windows.Forms.Panel();
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
@@ -46,8 +46,8 @@
             this.ContenedorMenuAvion.Location = new System.Drawing.Point(667, 0);
             this.ContenedorMenuAvion.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.ContenedorMenuAvion.Name = "ContenedorMenuAvion";
-            this.ContenedorMenuAvion.Size = new System.Drawing.Size(2101, 1355);
-            this.ContenedorMenuAvion.TabIndex = 4;
+            this.ContenedorMenuAvion.Size = new System.Drawing.Size(1728, 968);
+            this.ContenedorMenuAvion.TabIndex = 8;
             // 
             // MenuVertical
             // 
@@ -60,8 +60,8 @@
             this.MenuVertical.Location = new System.Drawing.Point(0, 0);
             this.MenuVertical.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(667, 1355);
-            this.MenuVertical.TabIndex = 3;
+            this.MenuVertical.Size = new System.Drawing.Size(667, 968);
+            this.MenuVertical.TabIndex = 7;
             // 
             // button3
             // 
@@ -78,9 +78,8 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(667, 95);
             this.button3.TabIndex = 3;
-            this.button3.Text = "BUSCAR AVION";
+            this.button3.Text = "BUSCAR TECNICO";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -97,7 +96,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(667, 95);
             this.button2.TabIndex = 2;
-            this.button2.Text = "ELIMINAR AVION";
+            this.button2.Text = "ELIMINAR TECNICO";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -116,9 +115,8 @@
             this.btnprod.Name = "btnprod";
             this.btnprod.Size = new System.Drawing.Size(667, 95);
             this.btnprod.TabIndex = 1;
-            this.btnprod.Text = "AGREGAR AVION";
+            this.btnprod.Text = "AGREGAR TECNICO";
             this.btnprod.UseVisualStyleBackColor = false;
-            this.btnprod.Click += new System.EventHandler(this.btnprod_Click);
             // 
             // btnlogoInicio
             // 
@@ -132,16 +130,16 @@
             this.btnlogoInicio.TabIndex = 0;
             this.btnlogoInicio.TabStop = false;
             // 
-            // MenuAvion
+            // MenuTecnico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2768, 1355);
+            this.ClientSize = new System.Drawing.Size(2395, 968);
             this.Controls.Add(this.ContenedorMenuAvion);
             this.Controls.Add(this.MenuVertical);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MenuAvion";
-            this.Text = "MenuAvion";
+            this.Name = "MenuTecnico";
+            this.Text = "MenuTecnico";
             this.MenuVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).EndInit();
             this.ResumeLayout(false);

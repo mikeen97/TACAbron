@@ -1,6 +1,6 @@
 ﻿namespace GUI_V_2
 {
-    partial class Modelos
+    partial class ModeloAdd
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Modelos));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModeloAdd));
             this.btnCerrar = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -112,7 +112,7 @@
             this.button1.Location = new System.Drawing.Point(619, 551);
             this.button1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(480, 83);
+            this.button1.Size = new System.Drawing.Size(639, 83);
             this.button1.TabIndex = 9;
             this.button1.Text = "CREAR MODELO";
             this.button1.UseVisualStyleBackColor = false;
@@ -166,7 +166,7 @@
             this.spinner2.Size = new System.Drawing.Size(120, 38);
             this.spinner2.TabIndex = 17;
             // 
-            // Modelos
+            // ModeloAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -184,7 +184,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Modelos";
+            this.Name = "ModeloAdd";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Modelos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.spinner)).EndInit();

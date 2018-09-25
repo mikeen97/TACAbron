@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI_V_2
 {
-    public partial class Modelos : Form
+    public partial class ModeloAdd : Form
     {
-        public Modelos()
+        public ModeloAdd()
         {
             InitializeComponent();
         }
@@ -28,7 +28,7 @@ namespace GUI_V_2
 
            
 
-            coneccion cn = new coneccion();
+            conexion cn = new conexion();
             cn.connectar();
 
            

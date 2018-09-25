@@ -13,7 +13,7 @@ namespace GUI_V_2
 {
     public partial class Principal : Form
     {
-        Pruebas prueb = new Pruebas();
+        PruebasAdd prueb = new PruebasAdd();
         public Principal()
         {
             InitializeComponent();
@@ -79,7 +79,7 @@ namespace GUI_V_2
 
         public void btnprod_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new Aviones());
+            AbrirFormInPanel(new MenuAvion());
             
         }
 
@@ -105,26 +105,25 @@ namespace GUI_V_2
 
         public void button2_Click(object sender, EventArgs e)
         {
-
-            AbrirFormInPanel(new Modelos());
+            AbrirFormInPanel(new MenuModelos());
         }
 
          void button3_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new Pruebas());
+            AbrirFormInPanel(new MenuPruebas());
         }
         public void abrirpanel() { 
 }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new Tecnico());
+            AbrirFormInPanel(new MenuTecnico());
             SubMenu.Visible = false;
         }
 
         private void button5_Click_1(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new ControladorAereo());
+            AbrirFormInPanel(new MenuControladorAereo());
             SubMenu.Visible = false;
         }
 

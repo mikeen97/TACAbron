@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace GUI_V_2
 {
-    public partial class Pruebas : Form
+    public partial class PruebasAdd : Form
     {
 
-        public Pruebas(){
+        public PruebasAdd(){
             InitializeComponent();
 
         }

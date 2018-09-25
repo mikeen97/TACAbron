@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI_V_2
 {
-    public partial class Aviones : Form
+    public partial class AvionAdd : Form
     {
-        public Aviones()
+        public AvionAdd()
         {
             InitializeComponent();
         }
