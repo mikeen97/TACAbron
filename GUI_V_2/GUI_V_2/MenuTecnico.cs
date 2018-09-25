@@ -32,13 +32,18 @@ namespace GUI_V_2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            AbrirFormMenu2(new TecnicoDelete());
         }
 
         private void btnprod_Click(object sender, EventArgs e)
         {
             AbrirFormMenu2(new TecnicoAdd());
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AbrirFormMenu2(new TecnicoFind());
         }
     }
 }

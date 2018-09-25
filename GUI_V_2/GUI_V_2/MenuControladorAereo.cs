@@ -33,5 +33,15 @@ namespace GUI_V_2
         {
             AbrirFormMenu2(new ControladorAereoAdd());
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AbrirFormMenu2(new ControladorAereoDelete());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AbrirFormMenu2(new ControladorAereoFind());
+        }
     }
 }
