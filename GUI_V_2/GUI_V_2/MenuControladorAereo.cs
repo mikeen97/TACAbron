@@ -16,5 +16,22 @@ namespace GUI_V_2
         {
             InitializeComponent();
         }
+        public void AbrirFormMenu2(object Formhijo)
+        {
+            if (this.ContenedorMenuAvion.Controls.Count > 0)
+                this.ContenedorMenuAvion.Controls.RemoveAt(0);
+            Form fh = Formhijo as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.ContenedorMenuAvion.Controls.Add(fh);
+            this.ContenedorMenuAvion.Tag = fh;
+            fh.Show();
+            Console.WriteLine("Finalizo Abrir Form");
+        }
+
+        private void btnprod_Click(object sender, EventArgs e)
+        {
+            AbrirFormMenu2(new ControladorAereoAdd());
+        }
     }
 }

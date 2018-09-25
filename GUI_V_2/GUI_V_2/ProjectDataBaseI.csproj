@@ -45,11 +45,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="conexion.cs" />
-    <Compile Include="ControladorAereo.cs">
+    <Compile Include="ControladorAereoAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ControladorAereo.Designer.cs">
-      <DependentUpon>ControladorAereo.cs</DependentUpon>
+    <Compile Include="ControladorAereoAdd.Designer.cs">
+      <DependentUpon>ControladorAereoAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="AvionDelete.cs">
       <SubType>Form</SubType>
@@ -157,14 +157,14 @@
       <DependentUpon>PruebasFind.cs</DependentUpon>
     </Compile>
     <Compile Include="Sqlconnection.cs" />
-    <Compile Include="Tecnico.cs">
+    <Compile Include="TecnicoAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tecnico.Designer.cs">
-      <DependentUpon>Tecnico.cs</DependentUpon>
+    <Compile Include="TecnicoAdd.Designer.cs">
+      <DependentUpon>TecnicoAdd.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ControladorAereo.resx">
-      <DependentUpon>ControladorAereo.cs</DependentUpon>
+    <EmbeddedResource Include="ControladorAereoAdd.resx">
+      <DependentUpon>ControladorAereoAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AvionDelete.resx">
       <DependentUpon>AvionDelete.cs</DependentUpon>
@@ -226,8 +226,8 @@
     <EmbeddedResource Include="PruebasFind.resx">
       <DependentUpon>PruebasFind.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tecnico.resx">
-      <DependentUpon>Tecnico.cs</DependentUpon>
+    <EmbeddedResource Include="TecnicoAdd.resx">
+      <DependentUpon>TecnicoAdd.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

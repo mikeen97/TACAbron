@@ -45,7 +45,7 @@ namespace GUI_V_2
 
             {
 
-                MessageBox.Show("Error al ejecutar Query", "Se mamut", MessageBoxButtons.OK);
+                MessageBox.Show("Error al ejecutar Query"+e.Message, "Se mamut", MessageBoxButtons.OK);
             }
 
         }
@@ -62,6 +62,28 @@ namespace GUI_V_2
         {
             connect.Close();
         }
+        public SqlDataReader getQuery(string query)
+        {
+            
+            try
+            {
+                connectar();
+                SqlCommand command = new SqlCommand(string.Format("SELECT num_modelo FROM MODELOS"));
+                SqlDataReader reader = command.ExecuteReader();
+
+                desconectar();
+                return reader;
+            }catch(SqlException e)
+            {
+                MessageBox.Show("Error al ejecutar Query\n" + e.Message, "Se mamut", MessageBoxButtons.OK);
+                desconectar();
+                return null;
+            }
+            
+
+
+        }
+
         public void ExecuteQuery(String query)
         {
             try
@@ -73,7 +95,7 @@ namespace GUI_V_2
             }
             catch (SqlException e)
             {
-                MessageBox.Show("Error al ejecutar Query", "Se mamut", MessageBoxButtons.OK);
+                MessageBox.Show("Error al ejecutar Query!\n"+e.Message, "Se mamut", MessageBoxButtons.OK);
                 desconectar();
             }
         }

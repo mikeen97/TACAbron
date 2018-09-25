@@ -43,10 +43,9 @@
             // 
             this.ContenedorMenuAvion.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ContenedorMenuAvion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContenedorMenuAvion.Location = new System.Drawing.Point(667, 0);
-            this.ContenedorMenuAvion.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.ContenedorMenuAvion.Location = new System.Drawing.Point(250, 0);
             this.ContenedorMenuAvion.Name = "ContenedorMenuAvion";
-            this.ContenedorMenuAvion.Size = new System.Drawing.Size(1728, 968);
+            this.ContenedorMenuAvion.Size = new System.Drawing.Size(648, 389);
             this.ContenedorMenuAvion.TabIndex = 8;
             // 
             // MenuVertical
@@ -58,9 +57,8 @@
             this.MenuVertical.Controls.Add(this.btnlogoInicio);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 0);
-            this.MenuVertical.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(667, 968);
+            this.MenuVertical.Size = new System.Drawing.Size(250, 389);
             this.MenuVertical.TabIndex = 7;
             // 
             // button3
@@ -73,10 +71,9 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 492);
-            this.button3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.button3.Location = new System.Drawing.Point(0, 206);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(667, 95);
+            this.button3.Size = new System.Drawing.Size(250, 40);
             this.button3.TabIndex = 3;
             this.button3.Text = "BUSCAR TECNICO";
             this.button3.UseVisualStyleBackColor = false;
@@ -91,10 +88,9 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 396);
-            this.button2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.button2.Location = new System.Drawing.Point(0, 166);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(667, 95);
+            this.button2.Size = new System.Drawing.Size(250, 40);
             this.button2.TabIndex = 2;
             this.button2.Text = "ELIMINAR TECNICO";
             this.button2.UseVisualStyleBackColor = false;
@@ -110,34 +106,34 @@
             this.btnprod.ForeColor = System.Drawing.Color.White;
             this.btnprod.Image = ((System.Drawing.Image)(resources.GetObject("btnprod.Image")));
             this.btnprod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnprod.Location = new System.Drawing.Point(0, 301);
-            this.btnprod.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnprod.Location = new System.Drawing.Point(0, 126);
             this.btnprod.Name = "btnprod";
-            this.btnprod.Size = new System.Drawing.Size(667, 95);
+            this.btnprod.Size = new System.Drawing.Size(250, 40);
             this.btnprod.TabIndex = 1;
             this.btnprod.Text = "AGREGAR TECNICO";
             this.btnprod.UseVisualStyleBackColor = false;
+            this.btnprod.Click += new System.EventHandler(this.btnprod_Click);
             // 
             // btnlogoInicio
             // 
             this.btnlogoInicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnlogoInicio.Image = ((System.Drawing.Image)(resources.GetObject("btnlogoInicio.Image")));
-            this.btnlogoInicio.Location = new System.Drawing.Point(8, 14);
-            this.btnlogoInicio.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnlogoInicio.Location = new System.Drawing.Point(3, 6);
             this.btnlogoInicio.Name = "btnlogoInicio";
-            this.btnlogoInicio.Size = new System.Drawing.Size(677, 181);
+            this.btnlogoInicio.Size = new System.Drawing.Size(254, 76);
             this.btnlogoInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnlogoInicio.TabIndex = 0;
             this.btnlogoInicio.TabStop = false;
             // 
             // MenuTecnico
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2395, 968);
+            this.ClientSize = new System.Drawing.Size(898, 389);
             this.Controls.Add(this.ContenedorMenuAvion);
             this.Controls.Add(this.MenuVertical);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "MenuTecnico";
             this.Text = "MenuTecnico";
             this.MenuVertical.ResumeLayout(false);
