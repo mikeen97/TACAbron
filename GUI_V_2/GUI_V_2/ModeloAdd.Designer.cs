@@ -34,16 +34,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.text_peso = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.text_num = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.text_capacidad = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.spinner = new System.Windows.Forms.NumericUpDown();
-            this.spinner2 = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.spinner)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spinner2)).BeginInit();
+            this.spin_capacidad = new System.Windows.Forms.NumericUpDown();
+            this.spin_peso = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.spin_capacidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spin_peso)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -90,15 +88,6 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Numero de Registro";
             // 
-            // text_peso
-            // 
-            this.text_peso.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_peso.Location = new System.Drawing.Point(1194, 405);
-            this.text_peso.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.text_peso.Name = "text_peso";
-            this.text_peso.Size = new System.Drawing.Size(513, 49);
-            this.text_peso.TabIndex = 11;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
@@ -109,7 +98,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(619, 551);
+            this.button1.Location = new System.Drawing.Point(568, 529);
             this.button1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(639, 83);
@@ -136,35 +125,27 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "Capacidad";
             // 
-            // text_capacidad
-            // 
-            this.text_capacidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_capacidad.Location = new System.Drawing.Point(1194, 322);
-            this.text_capacidad.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.text_capacidad.Name = "text_capacidad";
-            this.text_capacidad.Size = new System.Drawing.Size(513, 49);
-            this.text_capacidad.TabIndex = 14;
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(40, 40);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // spinner
+            // spin_capacidad
             // 
-            this.spinner.Location = new System.Drawing.Point(568, 341);
-            this.spinner.Name = "spinner";
-            this.spinner.Size = new System.Drawing.Size(120, 38);
-            this.spinner.TabIndex = 16;
+            this.spin_capacidad.Location = new System.Drawing.Point(568, 341);
+            this.spin_capacidad.Name = "spin_capacidad";
+            this.spin_capacidad.Size = new System.Drawing.Size(120, 38);
+            this.spin_capacidad.TabIndex = 16;
             // 
-            // spinner2
+            // spin_peso
             // 
-            this.spinner2.DecimalPlaces = 2;
-            this.spinner2.Location = new System.Drawing.Point(568, 416);
-            this.spinner2.Name = "spinner2";
-            this.spinner2.Size = new System.Drawing.Size(120, 38);
-            this.spinner2.TabIndex = 17;
+            this.spin_peso.DecimalPlaces = 2;
+            this.spin_peso.Location = new System.Drawing.Point(568, 416);
+            this.spin_peso.Name = "spin_peso";
+            this.spin_peso.Size = new System.Drawing.Size(120, 38);
+            this.spin_peso.TabIndex = 17;
+            this.spin_peso.ValueChanged += new System.EventHandler(this.spinner2_ValueChanged);
             // 
             // ModeloAdd
             // 
@@ -172,13 +153,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(2800, 1443);
-            this.Controls.Add(this.spinner2);
-            this.Controls.Add(this.spinner);
+            this.Controls.Add(this.spin_peso);
+            this.Controls.Add(this.spin_capacidad);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.text_capacidad);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.text_peso);
             this.Controls.Add(this.text_num);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -187,8 +166,8 @@
             this.Name = "ModeloAdd";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Modelos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.spinner)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spinner2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spin_capacidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spin_peso)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,13 +179,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox text_peso;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox text_num;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox text_capacidad;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.NumericUpDown spinner;
-        private System.Windows.Forms.NumericUpDown spinner2;
+        private System.Windows.Forms.NumericUpDown spin_capacidad;
+        private System.Windows.Forms.NumericUpDown spin_peso;
     }
 }

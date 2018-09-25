@@ -66,12 +66,15 @@ namespace GUI_V_2
         {
             try
             {
+                connectar();
                 SqlCommand command = new SqlCommand(query, connect);
                 SqlDataReader reader = command.ExecuteReader();
+                desconectar();
             }
             catch (SqlException e)
             {
                 MessageBox.Show("Error al ejecutar Query", "Se mamut", MessageBoxButtons.OK);
+                desconectar();
             }
         }
 

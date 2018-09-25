@@ -13,11 +13,16 @@ namespace GUI_V_2
 {
     public partial class Principal : Form
     {
+        
+        MenuModelos menModelos;
         PruebasAdd prueb = new PruebasAdd();
         public Principal()
         {
+            
             InitializeComponent();
         }
+
+
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();

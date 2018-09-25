@@ -12,6 +12,7 @@ namespace GUI_V_2
 {
     public partial class AvionAdd : Form
     {
+        conexion cn = new conexion();
         public AvionAdd()
         {
             InitializeComponent();

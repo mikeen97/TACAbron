@@ -32,10 +32,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbNumModeloAvion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbNumRegistroAviones = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -84,14 +84,14 @@
             this.btnCerrar.Text = "X";
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // textBox2
+            // tbNumModeloAvion
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(1105, 701);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(513, 49);
-            this.textBox2.TabIndex = 5;
+            this.tbNumModeloAvion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNumModeloAvion.Location = new System.Drawing.Point(1105, 701);
+            this.tbNumModeloAvion.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tbNumModeloAvion.Name = "tbNumModeloAvion";
+            this.tbNumModeloAvion.Size = new System.Drawing.Size(513, 49);
+            this.tbNumModeloAvion.TabIndex = 5;
             // 
             // label2
             // 
@@ -112,30 +112,30 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Numero de Modelo";
             // 
-            // comboBox1
+            // cbNumRegistroAviones
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(1128, 547);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(490, 39);
-            this.comboBox1.TabIndex = 9;
+            this.cbNumRegistroAviones.FormattingEnabled = true;
+            this.cbNumRegistroAviones.Location = new System.Drawing.Point(1128, 551);
+            this.cbNumRegistroAviones.Name = "cbNumRegistroAviones";
+            this.cbNumRegistroAviones.Size = new System.Drawing.Size(490, 39);
+            this.cbNumRegistroAviones.TabIndex = 9;
             // 
-            // AgregarAviones
+            // AvionAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(2800, 1443);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbNumRegistroAviones);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbNumModeloAvion);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.Name = "AgregarAviones";
+            this.Name = "AvionAdd";
             this.Text = "Productos";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -147,9 +147,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label btnCerrar;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbNumModeloAvion;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbNumRegistroAviones;
     }
 }

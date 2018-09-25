@@ -12,6 +12,7 @@ namespace GUI_V_2
 {
     public partial class ModeloAdd : Form
     {
+        conexion cn = new conexion();
         public ModeloAdd()
         {
             InitializeComponent();
@@ -24,18 +25,22 @@ namespace GUI_V_2
 
         private void button1_Click(object sender, EventArgs e)
         {
-        
+            cn.ExecuteQuery("EXECUTE INSERT_MODELO " + text_num.Text + "," + spin_capacidad.Value + "," + spin_peso.Value+";");
 
            
 
-            conexion cn = new conexion();
-            cn.connectar();
+           
 
            
 
         }
 
         private void Modelos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void spinner2_ValueChanged(object sender, EventArgs e)
         {
 
         }

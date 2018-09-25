@@ -12,8 +12,10 @@ namespace GUI_V_2
 {
     public partial class MenuModelos : Form
     {
+        conexion connect = new conexion();
         public MenuModelos()
         {
+            
             InitializeComponent();
         }
         public void AbrirFormMenu2(object Formhijo)
@@ -42,6 +44,11 @@ namespace GUI_V_2
         private void button3_Click(object sender, EventArgs e)
         {
             AbrirFormMenu2(new ModeloFind());
+        }
+
+        private void btnlogoInicio_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
