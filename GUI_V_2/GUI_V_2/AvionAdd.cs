@@ -36,15 +36,18 @@ namespace GUI_V_2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlDataReader reader= cn.getQuery("Select num_modelos from MODELOS_NUM;");
+            SqlDataReader reader= cn.getQuery("Select num_modelo from MODELOS_NUM;");
             while (cbNumRegistroAviones.Items.Count>0)
             {
                 cbNumRegistroAviones.Items.Remove(0);
             }
             while (reader.Read())
             {
-                cbNumRegistroAviones.Items.Add(reader.GetInt64(0));
+                cbNumRegistroAviones.Items.Add((int)reader.GetInt32(0));
             }
+           
+
+            cn.desconectar();
             
         }
     }

@@ -14,7 +14,7 @@ namespace GUI_V_2
     public partial class Principal : Form
     {
         
-        MenuModelos menModelos;
+        
         PruebasAdd prueb = new PruebasAdd();
         public Principal()
         {

@@ -68,11 +68,12 @@ namespace GUI_V_2
             try
             {
                 connectar();
-                SqlCommand command = new SqlCommand(string.Format("SELECT num_modelo FROM MODELOS"));
-                SqlDataReader reader = command.ExecuteReader();
-
-                desconectar();
-                return reader;
+                SqlCommand command = new SqlCommand(query,connect);
+                SqlDataReader read= command.ExecuteReader();
+               
+               
+                return read;
+                
             }catch(SqlException e)
             {
                 MessageBox.Show("Error al ejecutar Query\n" + e.Message, "Se mamut", MessageBoxButtons.OK);
