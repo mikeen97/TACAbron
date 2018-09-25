@@ -27,12 +27,6 @@ namespace GUI_V_2
         {
             cn.ExecuteQuery("EXECUTE INSERT_MODELO " + text_num.Text + "," + spin_capacidad.Value + "," + spin_peso.Value+";");
 
-           
-
-           
-
-           
-
         }
 
         private void Modelos_Load(object sender, EventArgs e)
